@@ -1,0 +1,25 @@
+{
+  "name": "esbuild-tree-shaking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "normal": "esbuild input.js --bundle  --outfile=output/ouput-normal.js",
+    "splitting": "esbuild input.js --bundle  --outdir=dist --splitting --format=esm",
+    "build:splitting": "esbuild dist/input.js --bundle  --outfile=output/ouput-splitting.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/underfin/esbuild-tree-shaking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/underfin/esbuild-tree-shaking/issues"
+  },
+  "homepage": "https://github.com/underfin/esbuild-tree-shaking#readme",
+  "dependencies": {
+    "esbuild": "0.14.3"
+  }
+}
